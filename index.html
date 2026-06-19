@@ -1991,6 +1991,20 @@ a.pbadge:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.45)
   #features{padding-bottom:104px}
   #eco{padding-top:84px}
 }
+/* MODELS block */
+#models .models-grid{max-width:780px;margin:10px auto 0;display:grid;gap:16px}
+#models .mgrp{display:grid;grid-template-columns:160px 1fr;align-items:center;gap:20px}
+#models .mgrp-l{font-family:var(--head);font-weight:600;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);text-align:right}
+#models .mgrp-chips{display:flex;gap:10px;flex-wrap:wrap}
+#models .mchip2{display:inline-flex;align-items:center;gap:8px;background:#161616;border:1px solid var(--line2);border-radius:150px;padding:10px 18px;font-size:14px;font-weight:500;white-space:nowrap}
+#models .mchip2 i{font-size:16px;color:var(--yellow)}
+#models .mchip2 b{font-weight:600}
+#models .mchip2 .mv{color:var(--tx3);font-weight:500}
+@media(max-width:720px){
+  #models .mgrp{grid-template-columns:1fr;gap:9px;justify-items:center}
+  #models .mgrp-l{text-align:center}
+  #models .mgrp-chips{justify-content:center}
+}
 </style>
 </head>
 <body>
@@ -2356,15 +2370,6 @@ a.pbadge:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.45)
     </div>
     </div>
 
-    <div class="mrow rv">
-      <span class="mlbl">Внутри:</span>
-      <span class="mchip"><i class="ti ti-video"></i>Veo 3</span>
-      <span class="mchip"><i class="ti ti-video"></i>Seedance 2.0 Pro</span>
-      <span class="mchip"><i class="ti ti-video"></i>Kling 3</span>
-      <span class="mchip"><i class="ti ti-photo"></i>Nano Banana 2</span>
-      <span class="mchip"><i class="ti ti-photo"></i>Nano Banana Pro</span>
-      <span class="mchip"><i class="ti ti-photo"></i>GPT Image 2</span>
-    </div>
   </div>
   <div class="wrap rv"><div class="ctab"><b>Соберите первый Reels за ~10 минут</b><button class="btn btn-y" data-cta>Попробовать бесплатно</button></div></div>
 </section>
@@ -2512,6 +2517,40 @@ a.pbadge:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.45)
           <div class="ft-mbar"><i></i></div>
           <div class="ft-mrow"><span class="ft-mnum">1</span><div class="ft-mtx"><b class="ft-mttl">Находите свежие идеи</b><span class="ft-mdesc">Лента трендов вашей ниши.</span></div></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELS -->
+<section id="models">
+  <div class="wrap center rv">
+    <h2>Лучшие нейросети по честной цене</h2>
+    <p class="sub">Один сервис вместо пяти подписок. Стоимость каждой генерации как у провайдеров моделей + фиксированный тариф на ChatPlace&nbsp;Pro.</p>
+  </div>
+  <div class="wrap models-grid rv">
+    <div class="mgrp">
+      <span class="mgrp-l">Видео</span>
+      <div class="mgrp-chips">
+        <span class="mchip2"><i class="ti ti-video"></i>Veo 3</span>
+        <span class="mchip2"><i class="ti ti-video"></i>Seedance 2.0 Pro</span>
+        <span class="mchip2"><i class="ti ti-video"></i>Kling 3</span>
+      </div>
+    </div>
+    <div class="mgrp">
+      <span class="mgrp-l">Фото</span>
+      <div class="mgrp-chips">
+        <span class="mchip2"><i class="ti ti-photo"></i>Nano Banana 2</span>
+        <span class="mchip2"><i class="ti ti-photo"></i>Nano Banana Pro</span>
+        <span class="mchip2"><i class="ti ti-photo"></i>GPT Image 2</span>
+      </div>
+    </div>
+    <div class="mgrp">
+      <span class="mgrp-l">Тексты и&nbsp;аналитика</span>
+      <div class="mgrp-chips">
+        <span class="mchip2"><i class="ti ti-sparkles"></i><b>Claude</b> <span class="mv">Sonnet 4.6</span></span>
+        <span class="mchip2"><i class="ti ti-sparkles"></i><b>Claude</b> <span class="mv">Opus 4.8</span></span>
+        <span class="mchip2"><i class="ti ti-sparkles"></i><b>Claude</b> <span class="mv">Fable 5</span></span>
       </div>
     </div>
   </div>
